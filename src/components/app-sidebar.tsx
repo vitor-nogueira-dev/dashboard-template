@@ -2,7 +2,7 @@
 
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import { BarChart3, ChevronDown, FileText, LayoutDashboard, Settings, User } from 'lucide-react';
+import { BarChart3, ChevronDown, FileText, Github, LayoutDashboard, Settings, User } from 'lucide-react';
 
 import { Logo } from '@/components/logo';
 import {
@@ -23,6 +23,7 @@ import {
   SidebarSeparator,
 } from '@/components/ui/sidebar';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
+import { Button } from './ui/button';
 
 export function AppSidebar() {
   const pathname = usePathname();
@@ -160,10 +161,16 @@ export function AppSidebar() {
         </SidebarGroup>
       </SidebarContent>
       <SidebarFooter className="pb-6">
+        <Button variant="outline">
+          <Link href="https://github.com/vitor-nogueira-dev/dashboard-template" className='flex items-center' target='_blank'>
+            View on GitHub
+            <Github className="ml-2 h-4 w-4" />
+          </Link>
+        </Button>
         <div className="p-2 text-xs text-muted-foreground text-center">
           <p>
             Dashboard Template v1.0.0 © {new Date().getFullYear()}</p>
-          <p>By <Link href="" className="hover:text-primary dark:hover:text-primary transition-colors text-foreground dark:text-white underline">@onogueiradev</Link></p>
+          <p>By <Link target='_blank' href="https://www.linkedin.com/in/vitor-nogueira-dev/" className="hover:text-primary dark:hover:text-primary transition-colors text-foreground dark:text-white underline">@onogueiradev</Link></p>
         </div>
       </SidebarFooter>
       <SidebarRail />
