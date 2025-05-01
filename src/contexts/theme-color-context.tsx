@@ -21,6 +21,11 @@ export function ThemeColorProvider({ children }: { children: React.ReactNode }) 
     if (savedColor) {
       setThemeColor(savedColor);
       document.documentElement.setAttribute('data-theme-color', savedColor);
+    } else {
+      const defaultColor = 'purple';
+      setThemeColor(defaultColor);
+      localStorage.setItem('theme-color', defaultColor);
+      document.documentElement.setAttribute('data-theme-color', defaultColor);
     }
   }, []);
 
