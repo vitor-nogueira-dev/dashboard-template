@@ -422,8 +422,3 @@
 .bg-sidebar {
   background-color: var(--sidebar);
 }
-
-
-.bg-sidebar:active {
-  background-color: var(--sidebar-active);
-}
