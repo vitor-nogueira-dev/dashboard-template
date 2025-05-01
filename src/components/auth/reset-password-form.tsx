@@ -49,7 +49,6 @@ export function ResetPasswordForm() {
       setIsLoading(false);
     }
   }
-
   if (isSubmitted) {
     return (
       <div className="space-y-4">
@@ -58,7 +57,7 @@ export function ResetPasswordForm() {
             If an account exists with the email you provided, we&apos;ve sent a link to reset your password.
           </p>
         </div>
-        <Button asChild className="w-full">
+        <Button className="w-full">
           <Link href="/signin">Back to Sign In</Link>
         </Button>
       </div>
