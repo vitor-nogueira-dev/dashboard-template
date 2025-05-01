@@ -518,10 +518,10 @@ export default function DataDisplay() {
               <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
                 <Card>
                   <CardHeader className="pb-2">
-                    <CardTitle className="text-sm font-medium">Total Revenue</CardTitle>
+                    <CardTitle className="text-sm font-medium">Revenue</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <div className="text-2xl font-bold">$45,231.89</div>
+                    <div className="text-2xl font-bold">$45,231</div>
                     <div className="flex items-center pt-1 text-xs text-green-500">
                       <TrendingUp className="mr-1 h-3 w-3" />
                       <span>+20.1% from last month</span>
@@ -835,10 +835,10 @@ export default function DataDisplay() {
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             <Card>
               <CardHeader className="pb-2">
-                <CardTitle className="text-sm font-medium">Total Revenue</CardTitle>
+                <CardTitle className="text-sm font-medium">Revenue</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="text-2xl font-bold">$45,231.89</div>
+                <div className="text-2xl font-bold">$45,231</div>
                 <div className="flex items-center pt-1 text-xs text-green-500">
                   <TrendingUp className="mr-1 h-3 w-3" />
                   <span>+20.1% from last month</span>

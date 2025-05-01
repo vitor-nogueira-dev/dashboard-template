@@ -418,3 +418,12 @@
 .scrollbar-corner:active {
   background-color: var(--primary-foreground);
 }
+
+.bg-sidebar {
+  background-color: var(--sidebar);
+}
+
+
+.bg-sidebar:active {
+  background-color: var(--sidebar-active);
+}

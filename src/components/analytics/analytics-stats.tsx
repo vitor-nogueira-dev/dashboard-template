@@ -18,11 +18,11 @@ export function AnalyticsStats() {
         <CarouselItem className="basis-1/2 sm:basis-1/3 xl:basis-1/4 cursor-grab">
           <Card>
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">Total Revenue</CardTitle>
+              <CardTitle className="text-sm font-medium">Revenue</CardTitle>
               <DollarSign className="h-4 w-4 text-primary" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold">$124,563.82</div>
+              <div className="text-2xl font-bold">$124,563</div>
               <p className="text-xs text-muted-foreground">
                 <span className="text-emerald-500 flex items-center">
                   <ArrowUpIcon className="mr-1 h-3 w-3" />
