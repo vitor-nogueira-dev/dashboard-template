@@ -3,6 +3,7 @@ import { Montserrat } from 'next/font/google';
 import './globals.css';
 import type { Viewport } from 'next';
 import { ThemeProvider } from 'next-themes';
+import { Analytics } from '@vercel/analytics/next';
 
 import { Toaster } from '@/components/ui/sonner';
 import { SidebarProvider } from '@/components/ui/sidebar';
@@ -47,8 +48,8 @@ export const metadata: Metadata = {
     type: 'website',
   },
   icons: {
-    icon: '/apple-touch-icon.png', 
-    apple: '/apple-touch-icon.png', 
+    icon: '/apple-touch-icon.png',
+    apple: '/apple-touch-icon.png',
   },
 };
 
@@ -75,6 +76,7 @@ export default function RootLayout({
               <SidebarProvider>
                 {children}
                 <Toaster position="top-right" richColors />
+                <Analytics />
               </SidebarProvider>
             </AuthProvider>
           </ThemeColorProvider>
