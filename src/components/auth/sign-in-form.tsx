@@ -90,7 +90,7 @@ export function SignInForm() {
         />
         <div className="text-sm flex items-center justify-between">
           <Button variant="outline" onClick={handleSetDefaultLogin} disabled={isLoading}>
-            Set Default Login
+            Set Demo User
           </Button>
           <Link href="/reset-password" className="text-primary hover:underline">
             Forgot password?
