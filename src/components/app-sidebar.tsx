@@ -2,7 +2,7 @@
 
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import { BarChart3, ChevronDown, FileText, Github, LayoutDashboard, Settings, User } from 'lucide-react';
+import { BarChart3, ChevronDown, FileText, LayoutDashboard, Settings, User } from 'lucide-react';
 
 import { Logo } from '@/components/logo';
 import {
@@ -24,9 +24,13 @@ import {
 } from '@/components/ui/sidebar';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
 import { Button } from './ui/button';
+import Image from 'next/image';
+import { useTheme } from 'next-themes';
 
 export function AppSidebar() {
   const pathname = usePathname();
+
+  const { resolvedTheme } = useTheme();
 
   const isActive = (path: string) => {
     return pathname === path;
@@ -164,7 +168,14 @@ export function AppSidebar() {
         <Button variant="outline">
           <Link href="https://github.com/vitor-nogueira-dev/dashboard-template" className='flex items-center' target='_blank'>
             View on GitHub
-            <Github className="ml-2 h-4 w-4" />
+
+            <Image
+              src={(resolvedTheme === 'dark' || resolvedTheme === 'system') ? '/icons/github-light.svg' : '/icons/github-dark.svg'}
+              alt="GitHub Logo"
+              width={20}
+              height={20}
+              className="ml-2 h-4 w-4"
+            />
           </Link>
         </Button>
         <div className="p-2 text-xs text-muted-foreground text-center">
