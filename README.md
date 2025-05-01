@@ -9,8 +9,11 @@
 ![Lucide Icons](https://img.shields.io/badge/Lucide%20Icons-0.503.0-blue)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
 
-
 Um template open-source de dashboard moderno construído com **Next.js 15**, **ShadcnUI**, **TypeScript** e **Context API**. Projetado para acelerar o desenvolvimento de interfaces escaláveis, com telas prontas, componentes personalizados e uma galeria interativa de exemplos.
+
+🔗 Demo: [Demo Dashboard Template](https://github.com/vitor-nogueira-dev/dashboard-template).
+
+![Dashboard Print](/public/example-application.png)
 
 ## Índice
 - [Dashboard Template](#dashboard-template)
