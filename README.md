@@ -11,7 +11,7 @@
 
 Um template open-source de dashboard moderno construído com **Next.js 15**, **ShadcnUI**, **TypeScript** e **Context API**. Projetado para acelerar o desenvolvimento de interfaces escaláveis, com telas prontas, componentes personalizados e uma galeria interativa de exemplos.
 
-🔗 Demo: [Demo Dashboard Template](https://github.com/vitor-nogueira-dev/dashboard-template).
+🔗 Demo: [Demo Dashboard Template](https://dashboard-template-onogueiradev.vercel.app).
 
 ![Dashboard Print](/public/example-application.png)
 
